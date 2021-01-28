@@ -1,3 +1,7 @@
+<?php
+require_once 'src/controllers/N_reciptController.php';
+?>
+
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="../css/main_page.css">
@@ -38,9 +42,27 @@ Hi,Johe
 </header>
 </div>
 
-<div class="space_main">
-sdaas
+<div class="recipt">
+    <?php
+
+
+    if(isset($recipts))
+
+        foreach ($recipts as $recipt):;
+    ?>
+
+    <p>NAME
+        <?= $recipt->getName();?>
+
+    <br>
+        STYLE <?= $recipt->getNameStyle(); ?> <br>
+        ALK % <?= $recipt->getalk(); ?><br>
+        IBU <?= $recipt->getIbu(); ?> <br>
+        SRV <?= $recipt->getSrv(); ?> <br>
+    </p>
+        <?php endforeach; ?>
 
 </div>
 </div>
 </BODY>
+>

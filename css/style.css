@@ -89,6 +89,8 @@ opacity: 1;
     align-items: center;
 
 }
+
+
 @media only screen and (max-device-width: 420px) {
     .form_in{
         height: 40em;
@@ -143,5 +145,11 @@ nav>img {
     flex-direction: row;
     justify-content: left;
     align-items: center;
+}
+.no-valid {
+    border: 3px solid red;
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em red;
+    outline: none;
 }
 
